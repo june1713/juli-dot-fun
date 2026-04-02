@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juli dot fun</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            color: blue ; /* blue */
+            height: 100vh;
+            width: 100%;
+            background-image: url('background.jpg'); /* replace */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            background: rgb(255, 255, 255);
+            border-top: rgb(0, 0, 255);
+            border-width: 0 0 thin thin;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .audio-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .audio-description {
+            font-size: 0.95rem;
+            max-width: 250px;
+        }
+
+        audio {
+            max-width: 100%;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .audio-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .audio-description {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <h1>welcome to juli dot fun</h1>
+
+        <p>
+            this is a process focused sound producing and performance project.
+        </p>
+
+        <div class="audio-container">
+            <audio controls>
+                <source src="julidotfun_01.mp3" type="audio/mpeg"> <!-- replace -->
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="audio-description">
+                (unreleased)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
